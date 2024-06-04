@@ -1,7 +1,7 @@
 # The_Jungle_Game
 
 ## Description:
-Jungle Chess is a two-player strategy board game implemented using Pygame. The game features two teams (red and blue), each controlling different animals with unique movement abilities. The objective is to capture the opponent's den or eliminate all opponent pieces.
+Jungle Chess is a two-player strategy board game implemented using Pygame. The game features two players (red and blue). The objective is to move one of your pieces to the opponent's den.
 
 ## Installation:
 1. Ensure you have Python installed on your system.
@@ -23,6 +23,8 @@ Jungle Chess is a two-player strategy board game implemented using Pygame. The g
 ### Game Setup:
 - The game board is 7 columns by 10 rows.
 - Red and Blue teams have the following animals: Elephant, Lion, Tiger, Leopard, Wolf, Dog, Cat, Mouse.
+- The strength of an animal is sorted as follows from strongest to weakest: Elephant, Lion, Tiger, Leopard, Wolf, Dog, Cat, Mouse. For example, Cat can defeat Mouse, Dog can defeat both Cat and Mouse, and so on. But only Elephant can defeat everyone except Mouse and Mouse can only defeat Elephant.
+- In order to defeat an opponent's animal, you have to be 1 square near the target and use your turn to move to the square of your target (only up, down, right, and left).
 - Initial positions for Red and Blue teams are predefined on the board.
 
 ### Game Rules:
@@ -31,14 +33,11 @@ Jungle Chess is a two-player strategy board game implemented using Pygame. The g
     - Turns alternate between the Red and Blue teams.
 2. **Movement**:
     - Click on an animal to select it.
-    - Click on a valid destination to move the selected animal.
+    - Click on a valid destination to move the selected animal which is 1 square up, 1 square down, 1 square right or 1 square left.
 3. **Winning the Game**:
-    - Capture the opponent's den located at (3,0) for Red and (3,8) for Blue.
-    - Eliminate all opponent's animals.
-4. **Animal Movement Abilities**:
-    - Each animal has unique movement and capture abilities.
+    - Move one of your animal to the opponent's den located at (3,0) for Red and (3,8) for Blue to win.
 
 ### Board Elements:
-- **Protected Cave**: Gray squares [(2,0), (3,1), (4,0) for Red; (2,8), (3,7), (4,8) for Blue]
-- **Den**: Red's den at (3,0) and Blue's den at (3,8)
-- **Traps**: Red's traps at (2,0), (4,0), and (3,1); Blue's traps at (2,8), (4,8), and (3,7)
+- **Protected Cave (6 Gray Squares)**: If your animal enters one of the Protected Caves, that animal is protected, and your opponent cannot defeat it even if they have a stronger animal 1 square near you.
+- **Den (Red Squares)**: If any animal reaches the opponent's den, then they win.
+- **River (12 Blue Squares)**: Only Dog and Mouse can access this area.
