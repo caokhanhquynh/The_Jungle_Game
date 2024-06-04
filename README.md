@@ -1,4 +1,4 @@
-# Jungle Chess
+# The_Jungle_Game
 
 ## Description:
 Jungle Chess is a two-player strategy board game implemented using Pygame. The game features two teams (red and blue), each controlling different animals with unique movement abilities. The objective is to capture the opponent's den or eliminate all opponent pieces.
@@ -15,7 +15,7 @@ Jungle Chess is a two-player strategy board game implemented using Pygame. The g
 1. Navigate to the directory where the script is located.
 2. Run the script:
     ```bash
-    python jungle_chess.py
+    python The_Jungle_Game.py
     ```
 
 ## How to Play:
