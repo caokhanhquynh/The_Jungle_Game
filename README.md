@@ -40,4 +40,4 @@ Jungle Chess is a two-player strategy board game implemented using Pygame. The g
 ### Board Elements:
 - **Protected Cave (6 Gray Squares)**: If your animal enters one of the Protected Caves, that animal is protected, and your opponent cannot defeat it even if they have a stronger animal 1 square near you.
 - **Den (Red Squares)**: If any animal reaches the opponent's den, then they win.
-- **River (12 Blue Squares)**: Only Dog and Mouse can access this area.
+- **River (12 Blue Squares)**: Only Wolf,Dog and Mouse can access this area.

@@ -108,7 +108,6 @@ def draw_board():
     pygame.draw.rect(screen, 'darkgray', [0, HEIGHT - (HEIGHT // row), WIDTH, HEIGHT // row])
     status_text = ['Red: Select a Piece to Move!', 'Red: Select a Destination!',
                    'Blue: Select a Piece to Move!', 'Blue: Select a Destination!']
-    turn_step = 0  
     # Set the turn_step to the appropriate value
     screen.blit(medium_font.render(status_text[turn_step], True, 'black'), (20, 460))
     
