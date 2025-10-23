@@ -1,5 +1,7 @@
 # The_Jungle_Game
 
+https://github.com/user-attachments/assets/a2ddbc77-e30d-435c-93e4-3d2499c864a9
+
 ## Description:
 Jungle Chess is a two-player strategy board game implemented using Pygame. The game features two players (red and blue). The objective is to move one of your pieces to the opponent's den.
 
@@ -28,6 +30,8 @@ Jungle Chess is a two-player strategy board game implemented using Pygame. The g
 - Initial positions for Red and Blue teams are predefined on the board.
 
 ### Game Rules:
+
+
 1. **Turns**:
     - Red team starts the game.
     - Turns alternate between the Red and Blue teams.
